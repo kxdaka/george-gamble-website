@@ -128,7 +128,7 @@ header h1 {
     = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = */
 
 header {
-    position: center; /* anchors .icon to the header, not the page */
+    position: relative; /* anchors .icon to the header, not the page */
 }
 
 .topnav {

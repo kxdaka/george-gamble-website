@@ -33,8 +33,8 @@
     --cream-text: #f6ead0;
     --medium-dark-text: #055723;
     --main-background: #F2C230;
-    --header-background: #F2E5A2;
-    --intro-background: #F29F05;
+    --header-background: #fd6732;
+    --intro-background: #fafafa;
     --dark-background: #002F15;
     --portrait-background: #e06c10;
     --landscape-background: #F23A29;
@@ -119,6 +119,7 @@ header {
 header h1 {
     color: var(--dark-text);
     font-weight: 600;
+    text-align: center;
 }
 
 /* = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
@@ -270,7 +271,7 @@ header {
 = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = */
 
 .carousel-section .caption {
-    background: #FAFAFA;
+    background: #42678c;
     margin: 0;
     padding: 10px;
     text-align: center;

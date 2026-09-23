@@ -128,13 +128,13 @@ header h1 {
     = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = */
 
 header {
-    position: relative; /* anchors .icon to the header, not the page */
+    position: center; /* anchors .icon to the header, not the page */
 }
 
 .topnav {
     display: flex;
     flex-wrap: wrap;
-    justify-content: left;
+    justify-content: center;
     gap: 0.5rem 2rem;
     width: 100%;
 }

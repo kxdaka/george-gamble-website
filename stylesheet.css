@@ -29,7 +29,7 @@
 
 :root {
     --dark-text: #13381f;
-    --light-text: #fcfcfa;
+    --light-text: #fafafa;
     --cream-text: #f6ead0;
     --medium-dark-text: #055723;
     --main-background: #F2C230;
@@ -79,7 +79,7 @@ img {
 
 * {
     margin: 0;
-    padding: 0;
+    padding: 0rem;
 }
 
 /* This is the main content container for all pages - max width 1200px, or 75rem*/
@@ -112,12 +112,12 @@ header {
     max-width: 1200px;
     margin: 0 auto;
     background-color: var(--header-background);
-    padding: 2rem 0 2rem 2rem;
-    min-height: 7rem;
+    padding: 1.5rem 0 0rem 2rem;
+    min-height: 1rem;
 }
 
 header h1 {
-    color: var(--dark-text);
+    color: var(--light-text);
     font-weight: 600;
     text-align: center;
 }
@@ -215,53 +215,34 @@ header {
 }
 /* = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
   
-    005.  INTRO BANNER AT TOP OF PAGE
+    005.  SECONDARY NAV
   
 = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = */
 
-.introduction {
-    background-color: var(--intro-background);
-    padding: 2rem;
+.secondary-nav {
+    display: flex;
+    background-color: #fafafa;
+    justify-content: space-evenly;
 }
 
-.introduction h2 {
-    color: var(--dark-text);
-    font-weight: 400;
-    font-size: 1.8rem;
-    margin-bottom: 1rem;
-}
-
-.introduction p {
-    color: var(--dark-text);
-    font-weight: 300;
-    font-size: 1rem;
-    margin-bottom: 1rem;
-}
-
-.readmore-button {
-    background-color: var(--button-colour);
-    border: none;
-    color: var(--off-white);
-    padding: 7px 20px;
-    text-align: center;
+.secondary-nav a {
     text-decoration: none;
-    display: inline-block;
-    font-size: 1rem;
-    margin-top: 1rem;
-    cursor: pointer;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
-    transition: all .3s;
-    border-radius: 5px;
+    color: #000000;
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 1rem;
+    width: 100%;
+    text-align: center;
 }
 
-.readmore-button:hover {
-    background-color: var(--button-colour);
-    color: var(--cream-text);
-    box-shadow: none;
+.secondary-nav a:nth-child(1), .secondary-nav a:nth-child(2) {
+    border-right: 1px solid #000000;
 }
 
-.readmore-button:active {
-    box-shadow: inset 0 2px 15px rgba(0, 0, 0, .3);
+.secondary-nav a:hover {
+    /* text-decoration: underline; */
+    background-color: #e5e5e5;
+    color: #000000;
 }
 
 /* = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =

@@ -32,7 +32,7 @@
     --light-text: #fafafa;
     --cream-text: #f6ead0;
     --medium-dark-text: #055723;
-    --main-background: #F2C230;
+    --main-background: #518ac4;
     --header-background: #fd6732;
     --intro-background: #fafafa;
     --dark-background: #002F15;
@@ -56,13 +56,12 @@
 = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = */
 
 body {
-    font-family:  'Space Grotesk', sans-serif;
     font-family: "Space Grotesk", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
     color: #1d1d1b;
-    font-size: 1.2rem;
+    font-size: 2.2rem;
     background-color: #97c8e3;
 }
 
@@ -127,7 +126,7 @@ header h1 {
 }
 
 .logo {
-    /* position: absolute; */
+    /* position: relative; */
     width: 7rem;
     height: 7rem;
     display: block;
@@ -164,6 +163,7 @@ header {
 
 .topnav a.current-page {
     font-weight: 600;
+    text-color: #000;
 }
 
 .icon {
@@ -201,16 +201,16 @@ header {
         gap: 0.7rem;
         position: absolute;
         top: 0;
-        right: 0;
+        right: 0rem;
         width: 10rem;
         margin-top: 0;
-        padding: 6rem 2rem 4rem 2rem;
+        padding: 4rem 2rem 4rem 2rem;
         background-color: beige;
     }
 
     .topnav.responsive a {
         display: block;
-        text-align: right;
+        text-align: left;
     }
 }
 
@@ -269,21 +269,10 @@ header {
   
 = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = */
 
-.carousel-section .caption {
-    background: #42678c;
-    margin: 0;
-    padding: 10px;
-    text-align: center;
-    color: #524d49;
-    font-size: .8rem;
-    font-weight: 200;
-    font-family: var(--typeface-open-sans);
-    font-style: italic;
-}
-
 .carousel-cell {
     width: 100%;
 }
+
 
 /* = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
   
@@ -699,7 +688,7 @@ footer {
 }
 
 footer p {
-    font-size: .8rem;
+    font-size: 1rem;
 }
 
 @supports (display: grid) {
@@ -716,11 +705,13 @@ footer p {
 
 .footer__menu__heading {
     font-weight: 600;
-    font-size: 1rem;
+    font-size: 2rem;
+    text-color:black;
 }
 
 ul.footer__menu__list {
     list-style-type: none;
+    font-size: 1.23rem;
 }
 
 ul.footer__menu__list li a {

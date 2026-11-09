@@ -32,7 +32,7 @@
     --light-text: #fafafa;
     --cream-text: #f6ead0;
     --medium-dark-text: #055723;
-    --main-background: #1f3850;
+    --main-background: #518ac4;
     --header-background: #518ac4;
     --intro-background: #fafafa;
     --dark-background: #002F15;
@@ -42,7 +42,7 @@
     --button-colour: #402320;
     --dark-green: #13632e;
     --slide-out-menu-background: rgba(233, 240, 234, 0.93);
-    --footer-background: #172634;
+    --footer-background: #1f3850;
     --off-white: #fafafa;
     --description-text: #8c8e8d;
     --description-text-colour: #fafafa;
@@ -127,8 +127,10 @@ header h1 {
     font-weight: 600;
     white-space: nowrap;
     text-align: center;
+    text-decoration: underline var(--portrait-background) 0.4rem;
+    text-underline-offset: 0.3rem;
 }
-
+ 
 .logo {
     /* position: relative; */
     width: 7rem;
@@ -183,12 +185,13 @@ header {
     border: none;
     outline: none;
     cursor: pointer;
-    padding: 0;
+    padding: 0 2rem 0 0;
     color: #e06c10;
 }
 
 .icon .material-symbols-outlined {
-    font-size: 48px;
+    font-size: 54px;
+    font-weight: 999.999;
 }
 
 /* First breakpoint */

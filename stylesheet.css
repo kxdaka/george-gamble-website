@@ -1,6 +1,6 @@
 /*  = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
 
-  Author: Your name here
+  Author: George Gamble
   Date: creation date
 
   CONTENTS:
@@ -32,8 +32,8 @@
     --light-text: #fafafa;
     --cream-text: #f6ead0;
     --medium-dark-text: #055723;
-    --main-background: #518ac4;
-    --header-background: #fd6732;
+    --main-background: #1f3850;
+    --header-background: #518ac4;
     --intro-background: #fafafa;
     --dark-background: #002F15;
     --portrait-background: #e06c10;
@@ -42,7 +42,7 @@
     --button-colour: #402320;
     --dark-green: #13632e;
     --slide-out-menu-background: rgba(233, 240, 234, 0.93);
-    --footer-background: #42678c;
+    --footer-background: #172634;
     --off-white: #fafafa;
     --description-text: #8c8e8d;
     --description-text-colour: #fafafa;
@@ -60,9 +60,9 @@ body {
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    color: #1d1d1b;
+    color: #fafafa;
     font-size: 2.2rem;
-    background-color: #97c8e3;
+    background-color: #0f1e2b;
 }
 
 img {
@@ -107,7 +107,7 @@ main {
 = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = */
 
 header {
-    position: relative; /* <-- needed so .icon anchors to the header, not the page */
+    position: relative; /* anchors the expanded navigation menu */
     max-width: 1200px;
     display: flex;
     justify-content: space-between;
@@ -119,9 +119,13 @@ header {
 }
 
 header h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     color: var(--light-text);
     font-weight: 600;
-    margin-left: -110px;
+    white-space: nowrap;
     text-align: center;
 }
 
@@ -140,7 +144,7 @@ header h1 {
     = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = */
 
 header {
-    position: relative; /* anchors .icon to the header, not the page */
+    position: relative; /* anchors the expanded navigation menu */
 }
 
 .topnav {
@@ -169,16 +173,22 @@ header {
 
 .icon {
     display: none;
-    position: absolute;
-    top: 1.5rem;
-    right: 1rem;
+    width: 3rem;
+    height: 3rem;
+    position: relative;
+    z-index: 2;
+    align-items: center;
+    justify-content: center;
     background: none;
     border: none;
     outline: none;
     cursor: pointer;
     padding: 0;
-    color: #000;
-    font-size: 2rem;
+    color: #e06c10;
+}
+
+.icon .material-symbols-outlined {
+    font-size: 48px;
 }
 
 /* First breakpoint */
@@ -193,7 +203,7 @@ header {
     }
 
     .icon {
-        display: block;
+        display: flex;
     }
 
     .topnav.responsive {
@@ -205,7 +215,8 @@ header {
         right: 0rem;
         width: 10rem;
         margin-top: 0;
-        padding: 2rem 2rem 1rem 2rem;
+        padding: 5rem 2rem 1rem;
+        z-index: 1;
         background-color: #fafafa;
     }
 
@@ -234,7 +245,7 @@ header {
 
 .secondary-nav {
     display: flex;
-    background-color: #fafafa;
+    background-color: #e06c10;
     justify-content: space-evenly;
 }
 
@@ -254,7 +265,7 @@ header {
 
 .secondary-nav a:hover {
     /* text-decoration: underline; */
-    background-color: #fafafa;
+    background-color: #ca5c0e;
     color: #000000;
 }
 
@@ -292,7 +303,7 @@ header {
     overflow: hidden;
     border-radius: 10px;
     text-decoration: none;
-    background-color: #002F15;
+    background-color: #e06c10;
 }
 
 .folio-card img {
@@ -361,6 +372,7 @@ header {
 .portrait__name {
     color: var(--cream-text);
     font-weight: 400;
+    font-size: 2rem;
     margin-top: .8rem;
     margin-bottom: .4rem;
 }
@@ -409,6 +421,7 @@ header {
 .landscape__name {
     color: var(--cream-text);
     font-weight: 400;
+    font-size: 2rem;
     margin-top: .8rem;
     margin-bottom: .4rem;
 }
@@ -772,7 +785,7 @@ footer p {
 ul.footer__menu__list {
     text-color: black;
     list-style-type: none;
-    font-size: 1.23rem;
+    font-size: 1.1rem;
 }
 
 ul.footer__menu__list li a {
@@ -847,19 +860,11 @@ ul.footer__menu__list li a:hover {
     }
     header h1 {
         display: none;
-        margin-left: -110px;
     }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (max-width: 768px) {
-    header h1 {
-       margin-left: -110px;
-    }
-}
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {}
